@@ -1,0 +1,195 @@
+.header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    &.scroll{
+        position: fixed;
+        background-color: rgba($color: $lightblack, $alpha: 0.8);
+        animation-name: fadeInUp;
+        animation-duration: 0.7s;
+        z-index: 20;
+    }
+    &__container{
+        @media(max-width:$md2){
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    &__main{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 30px 0;
+        column-gap: 20px;
+        @media(max-width:1000px){
+            padding: 25px 0;
+        }
+        @media(max-width:$md2){
+            padding: 20px 0;
+        }
+        @media(max-width:800px){
+            padding: 15px 0;
+        }
+        @media(max-width:$md3){
+            padding: 10px 0;
+        }
+        @media(max-width:$md4){
+            padding: 7px 0;
+        }
+    }
+    &__logo{
+        position: relative;
+        z-index: 4;
+        svg{
+            max-width: 140px;
+        }
+        @media(max-width:$md3){
+            svg{
+                max-width: 120px;
+            }
+        
+        }
+        @media(max-width:$md4){
+            svg{
+                max-width: 100px;
+            }
+        
+        }
+    }
+}
+.menu{
+    flex: 0 1 715px;
+    @media(max-width:$md2){
+        position: fixed;
+        left: 100%;
+        z-index: 5;
+        top: 0%;
+        left: 100%;
+        width: 60%;
+        padding: 0px 30px;
+        height: 100%;
+        background-color: $lightblack;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease-in-out;
+        &._active{
+            left: 40%;
+        }
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @media(max-width:$md2){
+            flex-direction: column;
+            text-align: center;
+            
+        }
+    }
+    &__item{
+        margin: 0 3px;
+        flex-wrap: wrap;
+        @media(max-width:$md2){
+            &:not(:last-child){
+                margin-bottom: 40px;
+            }
+        }
+    }
+    &__link{
+        position: relative;
+        color: $white;
+        transition: all 0.3s ease-out;
+        @media(max-width:$md2){
+            font-size: 24px;
+        }
+        @media(max-width:$md4){
+            font-size: 20px;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: -40%;
+            background-color: $yellow;
+            width: 0;
+            height: 2px; 
+            color: $yellow; 
+            transition: all 0.3s ease-out;
+            @media(max-width:$md2){
+                display: none;
+            }
+        }
+        @media (any-hover:hover){
+            &:hover{
+                color: $yellow;
+            }
+            &:hover::after{
+                width: 100%;
+            }
+        }
+    }
+}
+.icon__menu{
+    display: none;
+    position: relative;
+    z-index: 10;
+    background-color: transparent;
+    @media (max-width: $md2){
+        position: relative;
+        margin-left: 24px;
+        z-index: 5;
+        display: block;
+        width: 25px;
+        height: 20px;
+        cursor: pointer;
+        span{
+            transition: all 0.3s ease-out;
+            margin-right: 24px;
+            position: absolute;
+            top: calc(50% - 1px);
+            transform: translateY(-50%);
+            left: 0;
+            height: 2px;
+            width: 100%;
+            border-radius: 5px;
+            background-color: $yellow;
+            &:first-child{
+                top: 0;
+            }
+            &:last-child{
+                top: auto;
+                bottom: 0;
+            }
+        }
+    }
+    &._active{
+        span{
+            transform: scale(0);
+            &:first-child{
+                top: 0;
+                top: calc(50% - 1px);
+                transform: rotate(-45deg);
+            }
+            &:last-child{
+                top: auto;
+                bottom: 0;
+                bottom: calc(50% - 1px);
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
+@keyframes fadeInUp{
+    from{
+        opacity: 0;
+        top: -50px;
+    }   
+    to{
+        opacity: 1;
+        top: 0;
+    }
+}

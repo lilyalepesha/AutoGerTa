@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>АвтоГеРта</title>
+</head>
+<body>
+    <header class="header"><!-- верхняя часть страницы -->
+        <div class="header__container container"><!-- ограничивающий контейнер -->
+            <div class="header__main">
+                <a href="" class="header__logo logo"><!-- логотип-->
+                    <svg width="140" height="33" viewBox="0 0 140 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.54 32L13.5 28.6H8.3L7.26 32H4L9.04 17.66H12.74L17.8 32H14.54ZM11.74 22.74C11.6733 22.5133 11.5867 22.2267 11.48 21.88C11.3733 21.5333 11.2667 21.18 11.16 20.82C11.0533 20.46 10.9667 20.1467 10.9 19.88C10.8333 20.1467 10.74 20.48 10.62 20.88C10.5133 21.2667 10.4067 21.64 10.3 22C10.2067 22.3467 10.1333 22.5933 10.08 22.74L9.06 26.06H12.78L11.74 22.74ZM32.6486 23.94C32.6486 24.5267 32.4619 25.0267 32.0886 25.44C31.7286 25.8533 31.1886 26.12 30.4686 26.24V26.32C31.2286 26.4133 31.8353 26.6733 32.2886 27.1C32.7553 27.5267 32.9886 28.0733 32.9886 28.74C32.9886 29.2067 32.8953 29.64 32.7086 30.04C32.5353 30.44 32.2553 30.7867 31.8686 31.08C31.4819 31.3733 30.9819 31.6 30.3686 31.76C29.7686 31.92 29.0353 32 28.1686 32H22.9686V21.08H28.1686C29.0219 21.08 29.7819 21.1733 30.4486 21.36C31.1286 21.5333 31.6619 21.8267 32.0486 22.24C32.4486 22.6533 32.6486 23.22 32.6486 23.94ZM29.9086 28.58C29.9086 28.1533 29.7419 27.8467 29.4086 27.66C29.0753 27.46 28.5753 27.36 27.9086 27.36H25.9486V29.94H27.9686C28.5286 29.94 28.9886 29.84 29.3486 29.64C29.7219 29.4267 29.9086 29.0733 29.9086 28.58ZM29.6286 24.18C29.6286 23.8333 29.4953 23.58 29.2286 23.42C28.9619 23.26 28.5686 23.18 28.0486 23.18H25.9486V25.34H27.7086C28.3353 25.34 28.8086 25.2533 29.1286 25.08C29.4619 24.8933 29.6286 24.5933 29.6286 24.18ZM48.1867 23.32H44.6067V32H41.6267V23.32H38.0467V21.08H48.1867V23.32ZM63.5261 26.52C63.5261 27.4267 63.3994 28.2333 63.1461 28.94C62.9061 29.6467 62.5528 30.2467 62.0861 30.74C61.6328 31.22 61.0794 31.5867 60.4261 31.84C59.7728 32.08 59.0328 32.2 58.2061 32.2C57.4461 32.2 56.7394 32.08 56.0861 31.84C55.4461 31.5867 54.8928 31.22 54.4261 30.74C53.9594 30.2467 53.5928 29.6467 53.3261 28.94C53.0728 28.2333 52.9461 27.4267 52.9461 26.52C52.9461 25.3067 53.1594 24.2867 53.5861 23.46C54.0128 22.62 54.6261 21.98 55.4261 21.54C56.2261 21.1 57.1728 20.88 58.2661 20.88C59.2928 20.88 60.1994 21.1 60.9861 21.54C61.7728 21.98 62.3928 22.62 62.8461 23.46C63.2994 24.2867 63.5261 25.3067 63.5261 26.52ZM55.9861 26.52C55.9861 27.24 56.0594 27.8467 56.2061 28.34C56.3661 28.82 56.6128 29.1867 56.9461 29.44C57.2794 29.68 57.7128 29.8 58.2461 29.8C58.7794 29.8 59.2061 29.68 59.5261 29.44C59.8594 29.1867 60.0994 28.82 60.2461 28.34C60.4061 27.8467 60.4861 27.24 60.4861 26.52C60.4861 25.8 60.4061 25.2 60.2461 24.72C60.0994 24.24 59.8594 23.88 59.5261 23.64C59.1928 23.4 58.7594 23.28 58.2261 23.28C57.4394 23.28 56.8661 23.5533 56.5061 24.1C56.1594 24.6333 55.9861 25.44 55.9861 26.52ZM78.8489 17.72V20.22H72.8489V32H69.8289V17.72H78.8489ZM87.4936 20.88C88.5069 20.88 89.3736 21.0733 90.0936 21.46C90.8269 21.8467 91.3936 22.4067 91.7936 23.14C92.1936 23.8733 92.3936 24.7733 92.3936 25.84V27.28H85.3536C85.3803 28.12 85.6269 28.78 86.0936 29.26C86.5736 29.74 87.2336 29.98 88.0736 29.98C88.7803 29.98 89.4203 29.9133 89.9936 29.78C90.5669 29.6333 91.1603 29.4133 91.7736 29.12V31.42C91.2403 31.6867 90.6736 31.88 90.0736 32C89.4869 32.1333 88.7736 32.2 87.9336 32.2C86.8403 32.2 85.8736 32 85.0336 31.6C84.1936 31.1867 83.5336 30.5667 83.0536 29.74C82.5736 28.9133 82.3336 27.8733 82.3336 26.62C82.3336 25.34 82.5469 24.28 82.9736 23.44C83.4136 22.5867 84.0203 21.9467 84.7936 21.52C85.5669 21.0933 86.4669 20.88 87.4936 20.88ZM87.5136 23C86.9403 23 86.4603 23.1867 86.0736 23.56C85.7003 23.9333 85.4803 24.5133 85.4136 25.3H89.5936C89.5936 24.86 89.5136 24.4667 89.3536 24.12C89.2069 23.7733 88.9803 23.5 88.6736 23.3C88.3669 23.1 87.9803 23 87.5136 23ZM103.21 17.72C105.05 17.72 106.39 18.12 107.23 18.92C108.083 19.7067 108.51 20.7933 108.51 22.18C108.51 22.8067 108.417 23.4067 108.23 23.98C108.043 24.54 107.73 25.0467 107.29 25.5C106.863 25.94 106.297 26.2867 105.59 26.54C104.883 26.7933 104.01 26.92 102.97 26.92H101.67V32H98.65V17.72H103.21ZM103.05 20.2H101.67V24.44H102.67C103.243 24.44 103.737 24.3667 104.15 24.22C104.563 24.0733 104.883 23.84 105.11 23.52C105.337 23.2 105.45 22.7867 105.45 22.28C105.45 21.5733 105.257 21.0533 104.87 20.72C104.483 20.3733 103.877 20.2 103.05 20.2ZM123.609 23.32H120.029V32H117.049V23.32H113.469V21.08H123.609V23.32ZM133.703 20.86C135.17 20.86 136.29 21.18 137.063 21.82C137.85 22.4467 138.243 23.4133 138.243 24.72V32H136.163L135.583 30.52H135.503C135.197 30.9067 134.877 31.2267 134.543 31.48C134.223 31.7333 133.85 31.9133 133.423 32.02C133.01 32.14 132.497 32.2 131.883 32.2C131.243 32.2 130.663 32.08 130.143 31.84C129.637 31.5867 129.237 31.2067 128.943 30.7C128.65 30.18 128.503 29.5267 128.503 28.74C128.503 27.58 128.91 26.7267 129.723 26.18C130.537 25.62 131.757 25.3133 133.383 25.26L135.283 25.2V24.72C135.283 24.1467 135.13 23.7267 134.823 23.46C134.53 23.1933 134.117 23.06 133.583 23.06C133.05 23.06 132.53 23.14 132.023 23.3C131.517 23.4467 131.01 23.6333 130.503 23.86L129.523 21.84C130.11 21.5333 130.757 21.2933 131.463 21.12C132.183 20.9467 132.93 20.86 133.703 20.86ZM134.123 26.98C133.163 27.0067 132.497 27.18 132.123 27.5C131.75 27.82 131.563 28.24 131.563 28.76C131.563 29.2133 131.697 29.54 131.963 29.74C132.23 29.9267 132.577 30.02 133.003 30.02C133.643 30.02 134.183 29.8333 134.623 29.46C135.063 29.0733 135.283 28.5333 135.283 27.84V26.94L134.123 26.98Z" fill="white"/>
+                        <path d="M1.05621 22C0.647759 18.3261 2.28157 10.7683 12.0844 9.9286L19.0132 8.93935C21.638 8.56459 23.9609 7.09418 26.0044 5.40468C28.6554 3.21293 32.5986 1.00626 37.2042 1.00626C45.9859 0.831311 64.0394 4.26029 66 19.3758" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+                <nav class="header__menu menu"><!-- навиагция-->
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#cost" class="menu__link">Стоимость работ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#news" class="menu__link">Новости</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#about" class="menu__link">О нас</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#gallery" class="menu__link">Галерея</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#review" class="menu__link">Отзывы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#contacts" class="menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="icon__menu"><!-- кнопка бургер меню-->
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <section class="hero"><!-- раздел "Главная"-->
+        <div class="hero__container container">
+            <div class="hero__content" data-aos="fade-up" data-aos-duration="1200"><!-- текстовая информация-->
+                <h1 class="hero__content-title">
+                    Станция кузовного ремонта <span>"АвтоГерТа"</span>
+                </h1> 
+                <p class="hero__content-descr">Наши специалисты по кузовному ремонту имеют большой опыт работы .Их опыт работы и знание материалов позволяет осуществлять высококачественный ремонт даже автомобилей премиум марок.
+                </p>
+                <div class="hero__content-btns btns">
+                    <button class="btn btns-item" data-path="request" id="modal__link">Оставить заявку</button>
+                    <a href="tel:375336369815" class="call btns-item" >Позвонить</a>
+                </div>
+            </div>
+            <div class="hero__img" data-aos="fade-up" data-aos-duration="1200"><img src="images/hero/car.png" alt="auto-hero"></div><!-- изображение автомобиля-->
+        </div>
+        <div class="hero__popup popup" data-target="request" id="modal"><!--всплывающее окно-->
+            <div class="hero__popup-body popup__bg">
+                <div class="hero__popup-content">
+                    <button class="hero__popup-close" id="close">&times;</button>  
+                    <h4 class="hero__popup-title">Оставить заявку</h4>
+                    <form type="submit" action="#" class="hero__popup-form form-hero" name="form" method="POST" enctype="multipart/form-data">
+                        <label class="form-hero__label">
+                            <span class="form-hero__text">Имя</span>
+                            <input class="form-hero__input" placeholder="Введите имя" type="text" data-validate-field="name" name="Имя">
+                        </label>
+                        <label class="form-hero__label">
+                            <span class="form-hero__text">Email</span>
+                            <input class="form-hero__input" type="email" data-validate-field="email" name="Email" placeholder="Введите email">
+                        </label>
+                        <label class="form-hero__label">
+                            <span class="form-hero__text">Номер телефона</span>
+                            <input class="form-hero__input" type="tel" data-validate-field="tel" name="Телефон" placeholder="Введите номер телефона">
+                        </label>
+                        <label class="form-hero__label">
+                            <span class="form-hero__text">Вид ремонта</span>
+                            <input class="form-hero__input" type="text" data-validate-field="kind" placeholder="Введите вид ремонта">
+                        </label>
+                        <label class="form-hero__label" id="info">
+                            <span class="form-hero__text">Дополнительная информация</span>
+                            <textarea name="info"  cols="30" rows="10" class="form-hero__info"></textarea>
+                        </label>
+                        <div class="file-hero">
+                            <input type="file" class="file-hero__input" name="file[]" accept=".jpg, .png">
+                            <button class="file-hero__button">Выберите файл</button>
+                        </div>
+                        <button class="form-hero__button btn">
+                            Отправить
+                        </button>
+                    </form>
+                </div>  
+            </div>
+        </div>
+    </section>
+    <section class="cost" id="cost"><!-- раздел "Стоимость работ"-->
+        <div class="cost__container container">
+            <h2 class="cost__title main__title">Стоимость работ</h2>
+            <div class="cost__content"><!-- Контентная часть"-->
+                <table class="cost__table" data-aos="fade-up" data-aos-duration="1200"><!-- таблица стоимости работ-->
+                    <tr>
+                        <th class="cost__table-title">Вид работы</th>
+                        <th class="cost__table-title">Ед.изм</th>
+                        <th class="cost__table-title">Цена</th>
+                    </tr>
+                    <tr data-id="01">
+                        <td class="cost__table-name">
+                            <p class="cost__table-kind">Ремонтная покраска крыла</p>
+                            <select name="kind" class="cost__table-select">
+                                <option value="200">переднего</option>
+                                <option value="240">заднего</option>
+                            </select>
+                        </td>
+                        <td class="cost__table-item"><p><span id="cost__table-count">1</span>шт.</p></td>
+                        <td class="cost__table-price"><p><span id="cost__table-price">200</span>руб.</p></td>
+                        <td><button class="cost__table-add">+</button></td>
+                    </tr>
+                    <tr data-id="02">
+                        <td class="cost__table-name">
+                            <p class="cost__table-kind">Ремонтная покраска двери</p>
+                            <select data-select="2" name="kind" class="cost__table-select">
+                                <option value="200">передней</option>
+                                <option value="200">задней</option>
+                                <option value="300">передней (с двух сторон)</option>
+                                <option value="300">задней (с двух сторон)</option>
+                            </select>
+                        </td>
+                        <td class="cost__table-item"><p><span id="cost__table-count">1</span>шт.</p></td>
+                        <td class="cost__table-price"><p><span id="cost__table-price">200</span>руб.</p></td>
+                        <td><button class="cost__table-add">+</button></td>
+                    </tr>
+                    <tr data-id="03">
+                        <td class="cost__table-name">
+                            <p class="cost__table-kind">Ремонтная покраска крыши</p>
+                        </td>
+                        <td class="cost__table-item"><p><span id="cost__table-count">1</span>шт.</p></td>
+                        <td class="cost__table-price"><p><span id="cost__table-price">300</span>руб.</p></td>
+                        <td><button class="cost__table-add">+</button></td>
+                    </tr>
+                    <tr data-id="04">
+                        <td class="cost__table-name">
+                            <p class="cost__table-kind">Ремонтная покраска капота авто</p>
+                            <select name="kind" class="cost__table-select">
+                                <option value="300">(с одной стороны)</option>
+                                <option value="350">(с двух сторон)</option>
+                            </select>
+                        </td>
+                        <td class="cost__table-item"><p><span id="cost__table-count">1</span>шт.</p></td>
+                        <td class="cost__table-price"><p><span id="cost__table-price">300</span>руб.</p></td>
+                        <td><button class="cost__table-add">+</button></td>
+                    </tr>
+                    <tr data-id="05">
+                        <td class="cost__table-name">
+                            <p class="cost__table-kind">Ремонтная покраска багажника</p>
+                            <select name="kind" class="cost__table-select">
+                                <option value="200">(с одной стороны)</option>
+                                <option value="300">(с двух сторон)</option>
+                            </select>
+                        </td>
+                        <td class="cost__table-item"><p><span id="cost__table-count">1</span>шт.</p></td>
+                        <td class="cost__table-price"><p><span id="cost__table-price">200</span>руб.</p></td>
+                        <td><button class="cost__table-add">+</button></td>
+                    </tr>
+                    <tr data-id="06">
+                        <td class="cost__table-name">
+                            <p class="cost__table-kind">Ремонтная покраска бампера</p>
+                            <select name="kind" class="cost__table-select">
+                                <option value="300">переднего</option>
+                                <option value="200">заднего</option>
+                            </select>
+                        </td>
+                        <td class="cost__table-item"><p><span id="cost__table-count">1</span>шт.</p></td>
+                        <td class="cost__table-price"><p><span id="cost__table-price">200</span>руб.</p></td>
+                        <td><button class="cost__table-add">+</button></td>
+                    </tr>
+                    <tr data-id="07">
+                        <td class="cost__table-name">
+                            <p class="cost__table-kind">Ремонтная покраска порога</p>
+                        </td>
+                        <td class="cost__table-item"><p><span id="cost__table-count">1</span>шт.</p></td>
+                        <td class="cost__table-price"><p><span id="cost__table-price">200</span>руб.</p></td>
+                        <td><button class="cost__table-add">+</button></td>
+                    </tr>
+                    <tr data-id="08">
+                        <td class="cost__table-name">
+                            <p class="cost__table-kind">Ремонтная покраска моудинга</p>
+                        </td>
+                        <td class="cost__table-item"><p><span id="cost__table-count">1</span>шт.</p></td>
+                        <td class="cost__table-price"><p><span id="cost__table-price">200</span>руб.</p></td>
+                        <td><button class="cost__table-add">+</button></td>
+                    </tr>
+                    <tr data-id="09">
+                        <td class="cost__table-name">
+                            <p class="cost__table-kind">Ремонт порога</p>
+                        </td>
+                        <td class="cost__table-item"><p><span id="cost__table-count">1</span>шт.</p></td>
+                        <td class="cost__table-price"><p><span id="cost__table-price">200</span>руб.</p></td>
+                        <td><button class="cost__table-add">+</button></td>
+                    </tr>
+                    <tr data-id="10">
+                        <td class="cost__table-name">
+                            <p class="cost__table-kind">Ремонт бампера</p>
+                        </td>
+                        <td class="cost__table-item"><p><span id="cost__table-count">1</span>шт.</p></td>
+                        <td class="cost__table-price"><p><span id="cost__table-price">200</span>руб.</p></td>
+                        <td><button class="cost__table-add">+</button></td>
+                    </tr>
+                    <tr data-id="11">
+                        <td class="cost__table-name">
+                            <p class="cost__table-kind">Ремонт моудинга</p>
+                        </td>
+                        <td class="cost__table-item"><p><span id="cost__table-count">1</span>шт.</p></td>
+                        <td class="cost__table-price"><p><span id="cost__table-price">200</span>руб.</p></td>
+                        <td><button class="cost__table-add">+</button></td>
+                    </tr>
+                    <tr data-id="12">
+                        <td class="cost__table-name">
+                            <p class="cost__table-kind">Ремонт фары</p>
+                        </td>
+                        <td class="cost__table-item"><p><span id="cost__table-count">1</span>шт.</p></td>
+                        <td class="cost__table-price"><p><span id="cost__table-price">200</span>руб.</p></td>
+                        <td><button class="cost__table-add">+</button></td>
+                    </tr>
+                </table>
+                <div class="cost__calc calc" data-aos="fade-up" data-aos-duration="1200"><!-- калькулятор расчёта стоимости-->
+                    <div class="calc__text">
+                        <h4 class="calc__text-title">Калькулятор расчёта стоимости</h4>
+                        <p class="calc__text-descr">Нажите на + чтобы добавить услугу для расчёта стоимости</p>
+                    </div>
+                    <div class="calc-content">
+                        <div class="calc-content__items">
+                        </div> 
+                        <p class="calc-content__total">Итого: <span class="total">0 </span>руб.</p>
+                    </div>
+                </div>
+            </div>
+            <h2 class="cost__cards-title">Также вы можете приобрести:</h2>
+            <div class="cost__cards" data-aos="fade-up" data-aos-duration="1200"><!-- карточки товаров-->
+                <div class="cost__cards-items">
+                    <div class="cost__cards-item item-cards" data-color="01">
+                        <div class="item-cards__img"><img src="images/cost/vika red.png" alt="Краска"></div>
+                        <h6 class="item-cards__title">VIKA Эмаль акриловая 4+1 АК-1301 201 0,8кг</h6>  
+                        <div class="item-cards__content content-cards">
+                            <div class="content-cards__counter counter">
+                                <div class="counter__plus">+</div>
+                                <div class="counter__count">1</div>
+                                <div class="counter__minus">-</div>
+                            </div>
+                            <p class="content-cards__price">Цена: <span class="color-price">25.75</span> руб.</p>
+                            <p class="content-cards__color">Цвет: <span></span></p>
+                        </div>
+                        <select name="color" class="item-cards__select">
+                            <option disabled>Выберите цвет</option>
+                            <option value="#cc6633">Абрикос</option>
+                            <option value="#0a7679">Аквамарин</option>
+                            <option value="#32011f">Аметист</option>
+                            <option value="#f8eff0">Белый</option>
+                            <option value="#800040">Вишня</option>
+                            <option value="#b3faff">Голубой</option>
+                            <option value="#c50707">Калина</option>
+                            <option value="#808080">Кварц</option>
+                            <option value="#384f2f">Кедр</option>
+                            <option value="#7e013d">Корал</option>
+                            <option value="#D35F11">Магма</option>
+                            <option value="#7e0004">Рубин</option>
+                            <option value="#abc4c5">Серо-голубой</option>
+                            <option value="#040001">Чёрный</option>
+                            <option value="#4A0206">Яшма</option>
+                        </select>
+                        <button class="item-cards__button btn">Рассчитать</button>
+                    </div>
+                    <div class="cost__cards-item item-cards" data-color="02">
+                        <div class="item-cards__img"><img src="images/cost/Mipa.png" alt="Краска"></div>
+                        <h6 class="item-cards__title">MIPA BC 2-Schicht-Basislack краска базовая Audi/VW LB5N 1л</h6>  
+                        <div class="item-cards__content content-cards">
+                            <div class="content-cards__counter counter">
+                                <div class="counter__plus">+</div>
+                                <div class="counter__count">1</div>
+                                <div class="counter__minus">-</div>
+                            </div>
+                            <p class="content-cards__price">Цена: <span class="color-price">52.99</span> руб.</p>
+                            <p class="content-cards__color">Цвет: <span></span></p>
+                        </div>
+                        <select name="color" class="item-cards__select">
+                            <option disabled>Выберите цвет</option>
+                            <option value="#cc6633">Абрикос</option>
+                            <option value="#0a7679">Аквамарин</option>
+                            <option value="#32011f">Аметист</option>
+                            <option value="#f8eff0">Белый</option>
+                            <option value="#800040">Вишня</option>
+                            <option value="#b3faff">Голубой</option>
+                            <option value="#c50707">Калина</option>
+                            <option value="#808080">Кварц</option>
+                            <option value="#384f2f">Кедр</option>
+                            <option value="#7e013d">Корал</option>
+                            <option value="#D35F11">Магма</option>
+                            <option value="#7e0004">Рубин</option>
+                            <option value="#abc4c5">Серо-голубой</option>
+                            <option value="#040001">Чёрный</option>
+                            <option value="#4A0206">Яшма</option>
+                        </select>
+                        <button class="item-cards__button btn">Рассчитать</button>
+                    </div>
+                    <div class="cost__cards-item item-cards" data-color="03">
+                        <div class="item-cards__img"><img src="images/cost/vika blue.png" alt="Краска"></div>
+                        <h6 class="item-cards__title">VIKA Эмаль акриловая 4+1 АК-1301 601 0,8кг</h6>  
+                        <div class="item-cards__content content-cards">
+                            <div class="content-cards__counter counter">
+                                <div class="counter__plus">+</div>
+                                <div class="counter__count">1</div>
+                                <div class="counter__minus">-</div>
+                            </div>
+                            <p class="content-cards__price">Цена: <span class="color-price">60.75</span> руб.</p>
+                            <p class="content-cards__color">Цвет: <span></span></p>
+                        </div>
+                        <select name="color" class="item-cards__select">
+                            <option disabled>Выберите цвет</option>
+                            <option value="#cc6633">Абрикос</option>
+                            <option value="#0a7679">Аквамарин</option>
+                            <option value="#32011f">Аметист</option>
+                            <option value="#f8eff0">Белый</option>
+                            <option value="#800040">Вишня</option>
+                            <option value="#b3faff">Голубой</option>
+                            <option value="#c50707">Калина</option>
+                            <option value="#808080">Кварц</option>
+                            <option value="#384f2f">Кедр</option>
+                            <option value="#7e013d">Корал</option>
+                            <option value="#D35F11">Магма</option>
+                            <option value="#7e0004">Рубин</option>
+                            <option value="#abc4c5">Серо-голубой</option>
+                            <option value="#040001">Чёрный</option>
+                            <option value="#4A0206">Яшма</option>
+                        </select>
+                        <button class="item-cards__button btn">Рассчитать</button>
+                    </div>
+                    <div class="cost__cards-item item-cards" data-color="04">
+                        <div class="item-cards__img"><img src="images/cost/vika blue.png" alt="Краска"></div>
+                        <h6 class="item-cards__title">VIKA Эмаль (краска) базовая LADA 195 Сердолик, 1л</h6>  
+                        <div class="item-cards__content content-cards">
+                            <div class="content-cards__counter counter">
+                                <div class="counter__plus">+</div>
+                                <div class="counter__count">1</div>
+                                <div class="counter__minus">-</div>
+                            </div>
+                            <p class="content-cards__price">Цена: <span class="color-price">28.75</span> руб.</p>
+                            <p class="content-cards__color">Цвет: <span></span></p>
+                        </div>
+                        <select name="color" class="item-cards__select">
+                            <option disabled>Выберите цвет</option>
+                            <option value="#cc6633">Абрикос</option>
+                            <option value="#0a7679">Аквамарин</option>
+                            <option value="#32011f">Аметист</option>
+                            <option value="#f8eff0">Белый</option>
+                            <option value="#800040">Вишня</option>
+                            <option value="#b3faff">Голубой</option>
+                            <option value="#c50707">Калина</option>
+                            <option value="#808080">Кварц</option>
+                            <option value="#384f2f">Кедр</option>
+                            <option value="#7e013d">Корал</option>
+                            <option value="#D35F11">Магма</option>
+                            <option value="#7e0004">Рубин</option>
+                            <option value="#abc4c5">Серо-голубой</option>
+                            <option value="#040001">Чёрный</option>
+                            <option value="#4A0206">Яшма</option>
+                        </select>
+                        <button class="item-cards__button btn">Рассчитать</button>
+                    </div>
+                    <div class="cost__cards-item item-cards" data-color="05">
+                        <div class="item-cards__img"><img src="images/cost/vika red.png" alt="Краска"></div>
+                        <h6 class="item-cards__title">VIKA Эмаль акриловая 4+1 АК-1301 202 0,85кг</h6>  
+                        <div class="item-cards__content content-cards">
+                            <div class="content-cards__counter counter">
+                                <div class="counter__plus">+</div>
+                                <div class="counter__count">1</div>
+                                <div class="counter__minus">-</div>
+                            </div>
+                            <p class="content-cards__price">Цена: <span class="color-price">23.98</span> руб.</p>
+                            <p class="content-cards__color">Цвет: <span></span></p>
+                        </div>
+                        <select name="color" class="item-cards__select">
+                            <option disabled>Выберите цвет</option>
+                            <option value="#cc6633">Абрикос</option>
+                            <option value="#0a7679">Аквамарин</option>
+                            <option value="#32011f">Аметист</option>
+                            <option value="#f8eff0">Белый</option>
+                            <option value="#800040">Вишня</option>
+                            <option value="#b3faff">Голубой</option>
+                            <option value="#c50707">Калина</option>
+                            <option value="#808080">Кварц</option>
+                            <option value="#384f2f">Кедр</option>
+                            <option value="#7e013d">Корал</option>
+                            <option value="#D35F11">Магма</option>
+                            <option value="#7e0004">Рубин</option>
+                            <option value="#abc4c5">Серо-голубой</option>
+                            <option value="#040001">Чёрный</option>
+                            <option value="#4A0206">Яшма</option>
+                        </select>
+                        <button class="item-cards__button btn">Рассчитать</button>
+                    </div>
+                    <div class="cost__cards-item item-cards" data-color="06">
+                        <div class="item-cards__img"><img src="images/cost/Mipa.png" alt="Краска"></div>
+                        <h6 class="item-cards__title">MIPA BC 2-Schicht-Basislack краска базовая Audi/VW LB5N 1л</h6>  
+                        <div class="item-cards__content content-cards">
+                            <div class="content-cards__counter counter">
+                                <div class="counter__plus">+</div>
+                                <div class="counter__count">1</div>
+                                <div class="counter__minus">-</div>
+                            </div>
+                            <p class="content-cards__price">Цена: <span class="color-price">52.99</span> руб.</p>
+                            <p class="content-cards__color">Цвет: <span></span></p>
+                        </div>
+                        <select name="color" class="item-cards__select">
+                            <option disabled>Выберите цвет</option>
+                            <option value="#cc6633">Абрикос</option>
+                            <option value="#0a7679">Аквамарин</option>
+                            <option value="#32011f">Аметист</option>
+                            <option value="#f8eff0">Белый</option>
+                            <option value="#800040">Вишня</option>
+                            <option value="#b3faff">Голубой</option>
+                            <option value="#c50707">Калина</option>
+                            <option value="#808080">Кварц</option>
+                            <option value="#384f2f">Кедр</option>
+                            <option value="#7e013d">Корал</option>
+                            <option value="#D35F11">Магма</option>
+                            <option value="#7e0004">Рубин</option>
+                            <option value="#abc4c5">Серо-голубой</option>
+                            <option value="#040001">Чёрный</option>
+                            <option value="#4A0206">Яшма</option>
+                        </select>
+                        <button class="item-cards__button btn">Рассчитать</button>
+                    </div>
+                    <div class="cost__cards-item item-cards" data-color="07">
+                        <div class="item-cards__img"><img src="images/cost/Mipa green.png" alt="Краска"></div>
+                        <h6 class="item-cards__title">MIPA AC 2K-Akryl Autolack Акриловая эмаль LADA 202 1л</h6>  
+                        <div class="item-cards__content content-cards">
+                            <div class="content-cards__counter counter">
+                                <div class="counter__plus">+</div>
+                                <div class="counter__count">1</div>
+                                <div class="counter__minus">-</div>
+                            </div>
+                            <p class="content-cards__price">Цена: <span class="color-price">23.75</span> руб.</p>
+                            <p class="content-cards__color">Цвет: <span></span></p>
+                        </div>
+                        <select name="color" class="item-cards__select">
+                            <option disabled>Выберите цвет</option>
+                            <option value="#cc6633">Абрикос</option>
+                            <option value="#0a7679">Аквамарин</option>
+                            <option value="#32011f">Аметист</option>
+                            <option value="#f8eff0">Белый</option>
+                            <option value="#800040">Вишня</option>
+                            <option value="#b3faff">Голубой</option>
+                            <option value="#c50707">Калина</option>
+                            <option value="#808080">Кварц</option>
+                            <option value="#384f2f">Кедр</option>
+                            <option value="#7e013d">Корал</option>
+                            <option value="#D35F11">Магма</option>
+                            <option value="#7e0004">Рубин</option>
+                            <option value="#abc4c5">Серо-голубой</option>
+                            <option value="#040001">Чёрный</option>
+                            <option value="#4A0206">Яшма</option>
+                        </select>
+                        <button class="item-cards__button btn">Рассчитать</button>
+                    </div>
+                    <div class="cost__cards-item item-cards" data-color="08">
+                        <div class="item-cards__img"><img src="images/cost/vika blue.png" alt="Краска"></div>
+                        <h6 class="item-cards__title">VIKA Эмаль акриловая 4+1 АК-1301 202 0,85кг</h6>  
+                        <div class="item-cards__content content-cards">
+                            <div class="content-cards__counter counter">
+                                <div class="counter__plus">+</div>
+                                <div class="counter__count">1</div>
+                                <div class="counter__minus">-</div>
+                            </div>
+                            <p class="content-cards__price">Цена: <span class="color-price">23.56</span> руб.</p>
+                            <p class="content-cards__color">Цвет: <span></span></p>
+                        </div>
+                        <select name="color" class="item-cards__select">
+                            <option disabled>Выберите цвет</option>
+                            <option value="#cc6633">Абрикос</option>
+                            <option value="#0a7679">Аквамарин</option>
+                            <option value="#32011f">Аметист</option>
+                            <option value="#f8eff0">Белый</option>
+                            <option value="#800040">Вишня</option>
+                            <option value="#b3faff">Голубой</option>
+                            <option value="#c50707">Калина</option>
+                            <option value="#808080">Кварц</option>
+                            <option value="#384f2f">Кедр</option>
+                            <option value="#7e013d">Корал</option>
+                            <option value="#D35F11">Магма</option>
+                            <option value="#7e0004">Рубин</option>
+                            <option value="#abc4c5">Серо-голубой</option>
+                            <option value="#040001">Чёрный</option>
+                            <option value="#4A0206">Яшма</option>
+                        </select>
+                        <button class="item-cards__button btn">Рассчитать</button>
+                    </div>
+                    <div class="cost__cards-item item-cards" data-color="09">
+                        <div class="item-cards__img"><img src="images/cost/Mipa.png" alt="Краска"></div>
+                        <h6 class="item-cards__title">MIPA BC 2-Schicht-Basislack краска базовая Audi/VW LY5Z 1л</h6>  
+                        <div class="item-cards__content content-cards">
+                            <div class="content-cards__counter counter">
+                                <div class="counter__plus">+</div>
+                                <div class="counter__count">1</div>
+                                <div class="counter__minus">-</div>
+                            </div>
+                            <p class="content-cards__price">Цена: <span class="color-price">50.84</span> руб.</p>
+                            <p class="content-cards__color">Цвет: <span></span></p>
+                        </div>
+                        <select name="color" class="item-cards__select">
+                            <option disabled>Выберите цвет</option>
+                            <option value="#cc6633">Абрикос</option>
+                            <option value="#0a7679">Аквамарин</option>
+                            <option value="#32011f">Аметист</option>
+                            <option value="#f8eff0">Белый</option>
+                            <option value="#800040">Вишня</option>
+                            <option value="#b3faff">Голубой</option>
+                            <option value="#c50707">Калина</option>
+                            <option value="#808080">Кварц</option>
+                            <option value="#384f2f">Кедр</option>
+                            <option value="#7e013d">Корал</option>
+                            <option value="#D35F11">Магма</option>
+                            <option value="#7e0004">Рубин</option>
+                            <option value="#abc4c5">Серо-голубой</option>
+                            <option value="#040001">Чёрный</option>
+                            <option value="#4A0206">Яшма</option>
+                        </select>
+                        <button class="item-cards__button btn">Рассчитать</button>
+                    </div>
+                    <div class="cost__cards-item item-cards" data-color="10">
+                        <div class="item-cards__img"><img src="images/cost/Mipa green.png" alt="Краска"></div>
+                        <h6 class="item-cards__title">MIPA BC 2-Schicht-Basislack краска базовая Audi/VW LA5Z 1л</h6>  
+                        <div class="item-cards__content content-cards">
+                            <div class="content-cards__counter counter">
+                                <div class="counter__plus">+</div>
+                                <div class="counter__count">1</div>
+                                <div class="counter__minus">-</div>
+                            </div>
+                            <p class="content-cards__price">Цена: <span class="color-price">50.98</span> руб.</p>
+                            <p class="content-cards__color">Цвет: <span></span></p>
+                        </div>
+                        <select name="color" class="item-cards__select">
+                            <option disabled>Выберите цвет</option>
+                            <option value="#cc6633">Абрикос</option>
+                            <option value="#0a7679">Аквамарин</option>
+                            <option value="#32011f">Аметист</option>
+                            <option value="#f8eff0">Белый</option>
+                            <option value="#800040">Вишня</option>
+                            <option value="#b3faff">Голубой</option>
+                            <option value="#c50707">Калина</option>
+                            <option value="#808080">Кварц</option>
+                            <option value="#384f2f">Кедр</option>
+                            <option value="#7e013d">Корал</option>
+                            <option value="#D35F11">Магма</option>
+                            <option value="#7e0004">Рубин</option>
+                            <option value="#abc4c5">Серо-голубой</option>
+                            <option value="#040001">Чёрный</option>
+                            <option value="#4A0206">Яшма</option>
+                        </select>
+                        <button class="item-cards__button btn">Рассчитать</button>
+                    </div>
+                    <div class="cost__cards-item item-cards" data-color="11">
+                        <div class="item-cards__img"><img src="images/cost/Mipa.png" alt="Краска"></div>
+                        <h6 class="item-cards__title">MIPA BC 2-Schicht-Basislack краска базовая Audi/VW LC5X 1л</h6>  
+                        <div class="item-cards__content content-cards">
+                            <div class="content-cards__counter counter">
+                                <div class="counter__plus">+</div>
+                                <div class="counter__count">1</div>
+                                <div class="counter__minus">-</div>
+                            </div>
+                            <p class="content-cards__price">Цена: <span class="color-price">52.99</span> руб.</p>
+                            <p class="content-cards__color">Цвет: <span></span></p>
+                        </div>
+                        <select name="color" class="item-cards__select">
+                            <option disabled>Выберите цвет</option>
+                            <option value="#cc6633">Абрикос</option>
+                            <option value="#0a7679">Аквамарин</option>
+                            <option value="#32011f">Аметист</option>
+                            <option value="#f8eff0">Белый</option>
+                            <option value="#800040">Вишня</option>
+                            <option value="#b3faff">Голубой</option>
+                            <option value="#c50707">Калина</option>
+                            <option value="#808080">Кварц</option>
+                            <option value="#384f2f">Кедр</option>
+                            <option value="#7e013d">Корал</option>
+                            <option value="#D35F11">Магма</option>
+                            <option value="#7e0004">Рубин</option>
+                            <option value="#abc4c5">Серо-голубой</option>
+                            <option value="#040001">Чёрный</option>
+                            <option value="#4A0206">Яшма</option>
+                        </select>
+                        <button class="item-cards__button btn">Рассчитать</button>
+                    </div>
+                    <div class="cost__cards-item item-cards" data-color="12">
+                        <div class="item-cards__img"><img src="images/cost/Mipa green.png" alt="Краска"></div>
+                        <h6 class="item-cards__title">MIPA BC 2-Schicht-Basislack краска базовая Audi/VW LA5U 1л</h6>  
+                        <div class="item-cards__content content-cards">
+                            <div class="content-cards__counter counter">
+                                <div class="counter__plus">+</div>
+                                <div class="counter__count">1</div>
+                                <div class="counter__minus">-</div>
+                            </div>
+                            <p class="content-cards__price">Цена: <span class="color-price">52.45</span> руб.</p>
+                            <p class="content-cards__color">Цвет: <span></span></p>
+                        </div>
+                        <select name="color" class="item-cards__select">
+                            <option disabled>Выберите цвет</option>
+                            <option value="#cc6633">Абрикос</option>
+                            <option value="#0a7679">Аквамарин</option>
+                            <option value="#32011f">Аметист</option>
+                            <option value="#f8eff0">Белый</option>
+                            <option value="#800040">Вишня</option>
+                            <option value="#b3faff">Голубой</option>
+                            <option value="#c50707">Калина</option>
+                            <option value="#808080">Кварц</option>
+                            <option value="#384f2f">Кедр</option>
+                            <option value="#7e013d">Корал</option>
+                            <option value="#D35F11">Магма</option>
+                            <option value="#7e0004">Рубин</option>
+                            <option value="#abc4c5">Серо-голубой</option>
+                            <option value="#040001">Чёрный</option>
+                            <option value="#4A0206">Яшма</option>
+                        </select>
+                        <button class="item-cards__button btn">Рассчитать</button>
+                    </div>
+                    <div class="cost__cards-item item-cards" data-color="13">
+                        <div class="item-cards__img"><img src="images/cost/vika blue.png" alt="Краска"></div>
+                        <h6 class="item-cards__title">VIKA Эмаль акриловая 4+1 АК-1301 1035 0,85кгг</h6>  
+                        <div class="item-cards__content content-cards">
+                            <div class="content-cards__counter counter">
+                                <div class="counter__plus">+</div>
+                                <div class="counter__count">1</div>
+                                <div class="counter__minus">-</div>
+                            </div>
+                            <p class="content-cards__price">Цена: <span class="color-price">37.35</span> руб.</p>
+                            <p class="content-cards__color">Цвет: <span></span></p>
+                        </div>
+                        <select name="color" class="item-cards__select">
+                            <option disabled>Выберите цвет</option>
+                            <option value="#cc6633">Абрикос</option>
+                            <option value="#0a7679">Аквамарин</option>
+                            <option value="#32011f">Аметист</option>
+                            <option value="#f8eff0">Белый</option>
+                            <option value="#800040">Вишня</option>
+                            <option value="#b3faff">Голубой</option>
+                            <option value="#c50707">Калина</option>
+                            <option value="#808080">Кварц</option>
+                            <option value="#384f2f">Кедр</option>
+                            <option value="#7e013d">Корал</option>
+                            <option value="#D35F11">Магма</option>
+                            <option value="#7e0004">Рубин</option>
+                            <option value="#abc4c5">Серо-голубой</option>
+                            <option value="#040001">Чёрный</option>
+                            <option value="#4A0206">Яшма</option>
+                        </select>
+                        <button class="item-cards__button btn">Рассчитать</button>
+                    </div>
+                    <div class="cost__cards-item item-cards" data-color="14">
+                        <div class="item-cards__img"><img src="images/cost/vika red.png" alt="Краска"></div>
+                        <h6 class="item-cards__title">VIKA Эмаль акриловая 4+1 АК-1301 121 0,85кг</h6>  
+                        <div class="item-cards__content content-cards">
+                            <div class="content-cards__counter counter">
+                                <div class="counter__plus">+</div>
+                                <div class="counter__count">1</div>
+                                <div class="counter__minus">-</div>
+                            </div>
+                            <p class="content-cards__price">Цена: <span class="color-price">50.84</span> руб.</p>
+                            <p class="content-cards__color">Цвет: <span></span></p>
+                        </div>
+                        <select name="color" class="item-cards__select">
+                            <option disabled>Выберите цвет</option>
+                            <option value="#cc6633">Абрикос</option>
+                            <option value="#0a7679">Аквамарин</option>
+                            <option value="#32011f">Аметист</option>
+                            <option value="#f8eff0">Белый</option>
+                            <option value="#800040">Вишня</option>
+                            <option value="#b3faff">Голубой</option>
+                            <option value="#c50707">Калина</option>
+                            <option value="#808080">Кварц</option>
+                            <option value="#384f2f">Кедр</option>
+                            <option value="#7e013d">Корал</option>
+                            <option value="#D35F11">Магма</option>
+                            <option value="#7e0004">Рубин</option>
+                            <option value="#abc4c5">Серо-голубой</option>
+                            <option value="#040001">Чёрный</option>
+                            <option value="#4A0206">Яшма</option>
+                        </select>
+                        <button class="item-cards__button btn">Рассчитать</button>
+                    </div>
+                    <div class="cost__cards-item item-cards" data-color="15">
+                        <div class="item-cards__img"><img src="images/cost/vika red.png" alt="Краска"></div>
+                        <h6 class="item-cards__title">VIKA Эмаль акриловая 4+1 АК-1301 0,85кг</h6>  
+                        <div class="item-cards__content content-cards">
+                            <div class="content-cards__counter counter">
+                                <div class="counter__plus">+</div>
+                                <div class="counter__count">1</div>
+                                <div class="counter__minus">-</div>
+                            </div>
+                            <p class="content-cards__price">Цена: <span class="color-price">37.98</span> руб.</p>
+                            <p class="content-cards__color">Цвет: <span></span></p>
+                        </div>
+                        <select name="color" class="item-cards__select">
+                            <option disabled>Выберите цвет</option>
+                            <option value="#cc6633">Абрикос</option>
+                            <option value="#0a7679">Аквамарин</option>
+                            <option value="#32011f">Аметист</option>
+                            <option value="#f8eff0">Белый</option>
+                            <option value="#800040">Вишня</option>
+                            <option value="#b3faff">Голубой</option>
+                            <option value="#c50707">Калина</option>
+                            <option value="#808080">Кварц</option>
+                            <option value="#384f2f">Кедр</option>
+                            <option value="#7e013d">Корал</option>
+                            <option value="#D35F11">Магма</option>
+                            <option value="#7e0004">Рубин</option>
+                            <option value="#abc4c5">Серо-голубой</option>
+                            <option value="#040001">Чёрный</option>
+                            <option value="#4A0206">Яшма</option>
+                        </select>
+                        <button class="item-cards__button btn">Рассчитать</button>
+                    </div>
+                    <div class="cost__cards-item item-cards" data-color="16">
+                        <div class="item-cards__img"><img src="images/cost/vika blue.png" alt="Краска"></div>
+                        <h6 class="item-cards__title">VIKA Эмаль акриловая 4+1 АК-1301 295 0,85кг</h6>  
+                        <div class="item-cards__content content-cards">
+                            <div class="content-cards__counter counter">
+                                <div class="counter__plus">+</div>
+                                <div class="counter__count">1</div>
+                                <div class="counter__minus">-</div>
+                            </div>
+                            <p class="content-cards__price">Цена: <span class="color-price">52.99</span> руб.</p>
+                            <p class="content-cards__color">Цвет: <span></span></p>
+                        </div>
+                        <select name="color" class="item-cards__select">
+                            <option disabled>Выберите цвет</option>
+                            <option value="#cc6633">Абрикос</option>
+                            <option value="#0a7679">Аквамарин</option>
+                            <option value="#32011f">Аметист</option>
+                            <option value="#f8eff0">Белый</option>
+                            <option value="#800040">Вишня</option>
+                            <option value="#b3faff">Голубой</option>
+                            <option value="#c50707">Калина</option>
+                            <option value="#808080">Кварц</option>
+                            <option value="#384f2f">Кедр</option>
+                            <option value="#7e013d">Корал</option>
+                            <option value="#D35F11">Магма</option>
+                            <option value="#7e0004">Рубин</option>
+                            <option value="#abc4c5">Серо-голубой</option>
+                            <option value="#040001">Чёрный</option>
+                            <option value="#4A0206">Яшма</option>
+                        </select>
+                        <button class="item-cards__button btn">Рассчитать</button>
+                    </div>
+                </div>     
+            </div>
+        </div>
+    </section>
+    <section class="news" id="news"><!-- раздел "Новости"-->
+        <div class="news__container container" data-aos="fade-up" data-aos-duration="1200">
+            <h2 class="news__title main__title">Новости</h2>
+            <div class="news__items"> <!-- контентная часть новостей-->
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about" data-aos="fade-up" data-aos-duration="1200"><!-- раздел "О нас"-->
+        <div class="about__container container">
+            <h2 class="about__title main__title">О нас</h2>
+            <div class="about__wrapper">
+                <div class="about__content"><!-- текстовая информация"-->
+                    <h3 class="about__content-title">Здравствуйте</h3>   
+                    <p class="about__content-text">Наши специалисты по кузовному ремонту имеют большой опыт работы .Их опыт работы и знание материалов позволяет осуществлять высококачественный ремонт даже автомобилей премиум марок.Индивидуальный подход и консультация по Вашему конкретному случаю.Используем только качественные материалы от проверенных поставщиков!</p>  
+                </div>
+                <div class="about__img"><!-- изображение авто-->
+                    <img src="images/about/auto.png" alt="about auto">
+                </div>
+            </div>
+        </div>     
+    </section>
+    <section class="gallery" id="gallery" data-aos="fade-up" data-aos-duration="1200"><!-- раздел "Галлерея"-->
+        <div class="gallery__container container">
+            <h2 class="gallery__title main__title">Галерея</h2> 
+            <div class="gallery__slider-buttons"><!-- стрелки слайдера-->
+                <button class="gallery__slider-button-prev">
+                    <svg width="19" height="29" viewBox="0 0 19 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 2L2 14.5L17 27" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="gallery__slider-button-next">
+                    <svg width="19" height="29" viewBox="0 0 19 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 2L2 14.5L17 27" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div> 
+            <div class="gallery__slider swiper"><!-- слайдер-->
+                <div class="swiper-wrapper">
+                    <div class="gallery__slide swiper-slide">
+                        <div class="gallery__slide-img">
+                            <img src="images/gallery/1.jpg" alt="slider auto">
+                            <div>До</div>
+                        </div>     
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                        <div class="gallery__slide-img">
+                            <img src="images/gallery/2.jpg" alt="slider auto">
+                            <div>После</div>
+                        </div>  
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                        <div class="gallery__slide-img">
+                            <img src="images/gallery/3.jpg" alt="slider auto">
+                            <div>До</div>
+                        </div>  
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                        <div class="gallery__slide-img">
+                            <img src="images/gallery/4.jpg" alt="slider auto">
+                            <div>После</div>
+                        </div>     
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                        <div class="gallery__slide-img">
+                            <img src="images/gallery/5.jpg" alt="slider auto">
+                            <div>До</div>
+                        </div>  
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                        <div class="gallery__slide-img">
+                            <img src="images/gallery/6.jpg" alt="slider auto">
+                            <div>После</div>
+                        </div>  
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                        <div class="gallery__slide-img">
+                            <img src="images/gallery/7.jpg" alt="slider auto">
+                            <div>До</div>
+                        </div>  
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                        <div class="gallery__slide-img">
+                            <img src="images/gallery/8.jpg" alt="slider auto">
+                            <div>После</div>
+                        </div>  
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                        <div class="gallery__slide-img">
+                            <img src="images/gallery/9.jpg" alt="slider auto">
+                            <div>До</div>
+                        </div>  
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                        <div class="gallery__slide-img">
+                            <img src="images/gallery/10.jpg" alt="slider auto">
+                            <div>После</div>
+                        </div>  
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                        <div class="gallery__slide-img">
+                            <img src="images/gallery/11.jpg" alt="slider auto">
+                            <div>До</div>
+                        </div>  
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                        <div class="gallery__slide-img">
+                            <img src="images/gallery/12.jpg" alt="slider auto">
+                            <div>После</div>
+                        </div>  
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                        <div class="gallery__slide-img">
+                            <img src="images/gallery/13.jpg" alt="slider auto">
+                            <div>До</div>
+                        </div>  
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                        <div class="gallery__slide-img">
+                            <img src="images/gallery/14.jpg" alt="slider auto">
+                            <div>После</div>
+                        </div>  
+                    </div>
+                </div>
+            </div>   
+        </div>      
+    </section>
+    <section class="review" id="review" data-aos="fade-up" data-aos-duration="1200"><!-- раздел "Отзывы"-->
+        <div class="review__container container">
+            <h2 class="review__title main__title">Отзывы</h2>
+            <div class="review__items"><!-- отзывы клиентов -->
+                <div class="review__item">
+                    <div class="review__item-stars">
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>                
+                    </div>
+                    <p class="review__item-text">
+                        Отлично справились с работой по восстановлению моего автомобиля после ДТП. И уложились в срок. Фото выложу позже.
+                    </p>
+                    <span class="review__item-author">-Герман</span>
+                </div>    
+                <div class="review__item">
+                    <div class="review__item-stars">
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>                
+                    </div>
+                    <p class="review__item-text">
+                        Хорошо справились с поставленной задачей, вытянули на стенде автомобиль и покрасили
+                    </p>
+                    <span class="review__item-author">-Shtory G</span>
+                </div>  
+                <div class="review__item">
+                    <div class="review__item-stars">
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>                
+                    </div>
+                    <p class="review__item-text">
+                        Отличное качество, все сделано в установленные сроки. Сложный был цвет, но справились.
+                    </p>
+                    <span class="review__item-author">-Diana G</span>
+                </div>  
+                <div class="review__item">
+                    <div class="review__item-stars">
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>                
+                    </div>
+                    <p class="review__item-text">
+                        Отлично справились с работой по восстановлению моего автомобиля после ДТП. И уложились в срок. Фото выложу позже.
+                    </p>
+                    <span class="review__item-author">-Герман</span>
+                </div>    
+                <div class="review__item">
+                    <div class="review__item-stars">
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>                
+                    </div>
+                    <p class="review__item-text">
+                        Хорошо справились с поставленной задачей, вытянули на стенде автомобиль и покрасили
+                    </p>
+                    <span class="review__item-author">-Shtory G</span>
+                </div>  
+                <div class="review__item">
+                    <div class="review__item-stars">
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>                
+                    </div>
+                    <p class="review__item-text">
+                        Отличное качество, все сделано в установленные сроки. Сложный был цвет, но справились.
+                    </p>
+                    <span class="review__item-author">-Diana G</span>
+                </div> 
+                <div class="review__item">
+                    <div class="review__item-stars">
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>                
+                    </div>
+                    <p class="review__item-text">
+                        Отлично справились с работой по восстановлению моего автомобиля после ДТП. И уложились в срок. Фото выложу позже.
+                    </p>
+                    <span class="review__item-author">-Герман</span>
+                </div>    
+                <div class="review__item">
+                    <div class="review__item-stars">
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>                
+                    </div>
+                    <p class="review__item-text">
+                        Хорошо справились с поставленной задачей, вытянули на стенде автомобиль и покрасили
+                    </p>
+                    <span class="review__item-author">-Shtory G</span>
+                </div>  
+                <div class="review__item">
+                    <div class="review__item-stars">
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 23.7205L25.888 29.5172L23.264 18.5944L32 11.2452L20.4974 10.2987L16 0L11.5026 10.2987L0 11.2452L8.73601 18.5944L6.11205 29.5172L16 23.7205Z" fill="#CE9246"/>
+                        </svg>                
+                    </div>
+                    <p class="review__item-text">
+                        Отличное качество, все сделано в установленные сроки. Сложный был цвет, но справились.
+                    </p>
+                    <span class="review__item-author">-Diana G</span>
+                </div> 
+            </div>
+            <div class="review__links"><!-- сслыки -->
+                <a href="#!" class="review__link" data-path="review" id="modal__link">Написать отзыв</a>
+                <a href="#!" id="more-reviews" class="review__link more">Показать ещё</a>
+            </div>
+            <div class="review__popup popup" data-target="review" id="modal"><!-- всплывающее окно-->
+                <div class="review__popup-body popup__bg">
+                    <div class="review__popup-content">
+                        <button class="review__popup-close" id="close">&times;</button> 
+                        <h4 class="review__popup-title">Написать отзыв</h4>
+                        <div class="review__popup-rating rating-review">
+                            <div class="rating-review__items" data-total-value="0">
+                                <div class="rating-review__item" data-item-value="5">★</div>
+                                <div class="rating-review__item" data-item-value="4">★</div>
+                                <div class="rating-review__item" data-item-value="3">★</div>
+                                <div class="rating-review__item" data-item-value="2">★</div>
+                                <div class="rating-review__item" data-item-value="1">★</div>
+                            </div>         
+                        </div>
+                        <form class="review__popup-form form-review" name="form">
+                            <label class="form-review__label">
+                                <span class="form-review__text">Имя</span>
+                                <input class="form-review__input" type="text" data-validate-field="name" name="Имя" placeholder="Введите имя">
+                            </label>
+                            <label class="form-review__label" id="info">
+                                <span class="form-review__text">Комментарий</span>
+                                <textarea name="info" cols="30" rows="10" class="form-review__info" data-validate-field="review" name="Комментарий"></textarea>
+                            </label>
+                            <button class="form-review__button btn">Опубликовать</button>
+                        </form>
+                    </div>        
+                </div>      
+            </div>
+        </div>     
+    </section>
+    <section class="contacts" id="contacts" data-aos="fade-up" data-aos-duration="1200"><!-- раздел "Контакты"-->
+        <div class="contacts__container container">
+            <h2 class="contacts__title main__title">Контакты</h2>
+            <div class="contacts__wrapper">
+                <div class="contacts__content content">
+                    <div class="content__info"><!-- почта компании номер телефона и адрес-->
+                        <div class="content__info-item info-item">
+                            <h4 class="contacts__item-title info-item__title">
+                                Адрес
+                            </h4>
+                            <p class="info-item__adress">
+                                ул.Куйбышева д.8
+                            </p>
+                        </div>
+                        <div class="content__info-item info-item">
+                            <h4 class="contacts__item-title info-item__title">
+                                Номер телефона
+                            </h4>
+                            <p class="info-item__number">
+                                8 033 312-82-86
+                            </p>
+                        </div>
+                        <div class="content__info-item info-item">
+                            <h4 class="contacts__item-title info-item__title">
+                                Email
+                            </h4>
+                            <p class="info-item__email">
+                                autogerta@gmail.com
+                            </p>
+                        </div>
+                        <button class="content__info-button btn" id="modal__link"  data-path="request">Оставить заявку</button>
+                    </div>
+                    <div class="content__hours hours"><!-- информация о времени работы компании-->
+                        <h4 class="contacts__item-title hours__title">Часы работы</h4>
+                        <div class="hours__list">
+                            <span class="hours__list-item">понедельник:  09:00–17:30</span>
+                            <span class="hours__list-item">вторник: 09:00–17:30</span>
+                            <span class="hours__list-item">среда: 09:00–17:30</span>
+                            <span class="hours__list-item">четверг: 09:00–17:30</span>
+                            <span class="hours__list-item">пятница: 09:00–17:30</span>
+                            <span class="hours__list-item">суббота: 09:00–16:00</span>
+                            <span class="hours__list-item">воскресенье: закрыто</span>
+                        </div>      
+                    </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2362.833827770448!2d23.869656515851297!3d53.685586980051575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dfd722c7369c83%3A0xf555d1bd323cb785!2z0KHRgtCw0L3RhtC40Y8g0LrRg9C30L7QstC90L7Qs9C-INGA0LXQvNC-0L3RgtCwICLQkNCy0YLQvtCT0LXRgNCi0LAi!5e0!3m2!1sru!2sby!4v1669167923978!5m2!1sru!2sby" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <svg width="160" height="100" viewBox="0 0 160 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.6">
+                <path d="M0 21.2051L0 21.5908C0 27.2594 4.54892 31.8714 10.14 31.8714L106.013 31.8714C112.133 31.8714 118.231 34.1186 123.182 38.1985C127.189 41.4998 132.244 43.3179 137.416 43.3179C149.869 43.3179 160 33.0469 160 20.4213V17.1196L143.217 25.4393L137.639 23.7218V15.6196L153.723 8.63099L152.059 6.51717C151.824 6.21867 149.611 3.54736 144.222 1.57024C143.963 1.47509 143.703 1.38441 143.442 1.29717C134.831 -1.56684 125.038 0.389328 117.884 6.40313C115.511 8.39743 112.724 9.77756 109.824 10.3948C108.172 10.7462 106.477 10.9248 104.789 10.9248L10.14 10.9248C4.54892 10.9245 0 15.5362 0 21.2051ZM31.2313 27.7496V23.354L95.936 23.354V19.2321L31.2313 19.2321V15.0463L104.789 15.0463C105.931 15.0463 107.073 14.9677 108.209 14.8293V27.8392C107.479 27.7843 106.746 27.7492 106.013 27.7492L31.2313 27.7496ZM27.1658 15.0463V27.7492H25.6697V15.0463H27.1658ZM4.06547 21.5908L4.06547 21.2051C4.06547 17.809 6.79035 15.0463 10.14 15.0463H21.6039V27.7492H10.14C6.79035 27.7496 4.06547 24.9869 4.06547 21.5908ZM120.479 9.57594C126.567 4.45864 134.88 2.78654 142.174 5.21329C142.395 5.28714 142.617 5.36408 142.838 5.44548C144.416 6.02461 145.649 6.66796 146.577 7.2512L133.573 12.9012V26.7779L143.566 29.8538L155.619 23.8788C154.014 32.5856 146.462 39.1957 137.416 39.1957C133.174 39.1957 129.03 37.7056 125.746 34.9993C121.764 31.7179 117.125 29.4767 112.274 28.4287V14.0148C115.23 13.1403 118.04 11.6259 120.479 9.57594Z" fill="#CE9246"/>
+                <path d="M15.5531 21.2934C15.5531 18.2786 13.1338 15.8257 10.1603 15.8257C7.18638 15.8257 4.76709 18.2786 4.76709 21.2934C4.76709 24.3085 7.18638 26.7617 10.1603 26.7617C13.1338 26.7617 15.5531 24.3085 15.5531 21.2934ZM8.83256 21.2934C8.83256 20.5514 9.42781 19.9476 10.1603 19.9476C10.8924 19.9476 11.4877 20.5514 11.4877 21.2934C11.4877 22.036 10.8921 22.6399 10.1603 22.6399C9.42781 22.6399 8.83256 22.036 8.83256 21.2934Z" fill="#CE9246"/>
+                <path d="M99.9998 19.2321V23.354H106.631V19.2321H99.9998Z" fill="#CE9246"/>
+                <path d="M144.447 72.8128C144.447 75.8279 146.866 78.2808 149.84 78.2808C152.814 78.2808 155.233 75.8279 155.233 72.8128C155.233 69.7976 152.814 67.3448 149.84 67.3448C146.866 67.3448 144.447 69.7976 144.447 72.8128ZM151.168 72.8128C151.168 73.555 150.572 74.1589 149.84 74.1589C149.108 74.1589 148.512 73.555 148.512 72.8128C148.512 72.0705 149.108 71.4666 149.84 71.4666C150.572 71.4666 151.168 72.0701 151.168 72.8128Z" fill="#CE9246"/>
+                <path d="M34.3763 54.2583C30.8349 52.0562 26.7572 50.8924 22.5837 50.8924C10.1308 50.8924 0 61.1638 0 73.7894L0 77.091L16.7826 68.7717L22.3604 70.4888L22.3604 78.5914L6.27743 85.58L7.94156 87.6942C8.17329 87.9885 13.5733 94.6079 28.5498 94.7264V100H38.0714L39.1102 98.1723C39.9473 96.6895 40.9105 95.2801 41.9763 93.9793C42.2325 93.665 42.4981 93.3531 42.7633 93.054C48.2863 86.8461 56.1831 83.2858 64.4289 83.2858L149.859 83.2858C155.451 83.2858 160 78.6735 160 73.0045V72.6205C160 66.9512 155.451 62.3392 149.859 62.3392H67.6538H62.9792C52.7678 62.3389 42.8772 59.5449 34.3763 54.2583ZM13.4343 86.9543L23.782 82.458L28.5498 88.4217V90.607C20.7075 90.5386 15.9526 88.523 13.4343 86.9543ZM39.7423 90.2954C39.4378 90.6389 39.1352 90.9944 38.8466 91.3482C37.692 92.7572 36.6411 94.2809 35.7223 95.8778H32.6152V86.9615L26.4259 79.2196L26.4259 67.4325L16.4333 64.3565L4.38021 70.3315C5.98539 61.6251 13.5373 55.0143 22.5837 55.0143C26.0068 55.0143 29.3493 55.9678 32.2507 57.7722C41.3912 63.4562 52.017 66.4607 62.9789 66.4611H67.6542H128.769V70.7519H64.064V74.8738H128.769V79.164H64.4292C55.0343 79.1636 46.0371 83.2202 39.7423 90.2954ZM132.835 79.1636V66.4607H134.33V79.1636H132.835ZM155.935 72.6202V73.0042C155.935 76.4006 153.209 79.1636 149.859 79.1636L138.396 79.1636V66.4607H149.859C153.209 66.4607 155.935 69.2241 155.935 72.6202Z" fill="#CE9246"/>
+                <path d="M30.9194 66.5043V83.2305H42.6747V66.5043H30.9194ZM34.9849 79.1086V76.9281H38.6093V79.1086H34.9849ZM38.6093 70.6261V72.8063H34.9849V70.6261H38.6093Z" fill="#CE9246"/>
+                <path d="M53.3696 70.7522V74.874H60.0008V70.7522H53.3696Z" fill="#CE9246"/>
+                </g>
+            </svg>
+        </div>
+    </section>
+    <footer class="footer"><!-- Нижняя часть страницы-->
+        <div class="footer__container container">
+            <a class="footer__logo logo" href="">
+                <svg width="140" height="33" viewBox="0 0 140 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.54 32L13.5 28.6H8.3L7.26 32H4L9.04 17.66H12.74L17.8 32H14.54ZM11.74 22.74C11.6733 22.5133 11.5867 22.2267 11.48 21.88C11.3733 21.5333 11.2667 21.18 11.16 20.82C11.0533 20.46 10.9667 20.1467 10.9 19.88C10.8333 20.1467 10.74 20.48 10.62 20.88C10.5133 21.2667 10.4067 21.64 10.3 22C10.2067 22.3467 10.1333 22.5933 10.08 22.74L9.06 26.06H12.78L11.74 22.74ZM32.6486 23.94C32.6486 24.5267 32.4619 25.0267 32.0886 25.44C31.7286 25.8533 31.1886 26.12 30.4686 26.24V26.32C31.2286 26.4133 31.8353 26.6733 32.2886 27.1C32.7553 27.5267 32.9886 28.0733 32.9886 28.74C32.9886 29.2067 32.8953 29.64 32.7086 30.04C32.5353 30.44 32.2553 30.7867 31.8686 31.08C31.4819 31.3733 30.9819 31.6 30.3686 31.76C29.7686 31.92 29.0353 32 28.1686 32H22.9686V21.08H28.1686C29.0219 21.08 29.7819 21.1733 30.4486 21.36C31.1286 21.5333 31.6619 21.8267 32.0486 22.24C32.4486 22.6533 32.6486 23.22 32.6486 23.94ZM29.9086 28.58C29.9086 28.1533 29.7419 27.8467 29.4086 27.66C29.0753 27.46 28.5753 27.36 27.9086 27.36H25.9486V29.94H27.9686C28.5286 29.94 28.9886 29.84 29.3486 29.64C29.7219 29.4267 29.9086 29.0733 29.9086 28.58ZM29.6286 24.18C29.6286 23.8333 29.4953 23.58 29.2286 23.42C28.9619 23.26 28.5686 23.18 28.0486 23.18H25.9486V25.34H27.7086C28.3353 25.34 28.8086 25.2533 29.1286 25.08C29.4619 24.8933 29.6286 24.5933 29.6286 24.18ZM48.1867 23.32H44.6067V32H41.6267V23.32H38.0467V21.08H48.1867V23.32ZM63.5261 26.52C63.5261 27.4267 63.3994 28.2333 63.1461 28.94C62.9061 29.6467 62.5528 30.2467 62.0861 30.74C61.6328 31.22 61.0794 31.5867 60.4261 31.84C59.7728 32.08 59.0328 32.2 58.2061 32.2C57.4461 32.2 56.7394 32.08 56.0861 31.84C55.4461 31.5867 54.8928 31.22 54.4261 30.74C53.9594 30.2467 53.5928 29.6467 53.3261 28.94C53.0728 28.2333 52.9461 27.4267 52.9461 26.52C52.9461 25.3067 53.1594 24.2867 53.5861 23.46C54.0128 22.62 54.6261 21.98 55.4261 21.54C56.2261 21.1 57.1728 20.88 58.2661 20.88C59.2928 20.88 60.1994 21.1 60.9861 21.54C61.7728 21.98 62.3928 22.62 62.8461 23.46C63.2994 24.2867 63.5261 25.3067 63.5261 26.52ZM55.9861 26.52C55.9861 27.24 56.0594 27.8467 56.2061 28.34C56.3661 28.82 56.6128 29.1867 56.9461 29.44C57.2794 29.68 57.7128 29.8 58.2461 29.8C58.7794 29.8 59.2061 29.68 59.5261 29.44C59.8594 29.1867 60.0994 28.82 60.2461 28.34C60.4061 27.8467 60.4861 27.24 60.4861 26.52C60.4861 25.8 60.4061 25.2 60.2461 24.72C60.0994 24.24 59.8594 23.88 59.5261 23.64C59.1928 23.4 58.7594 23.28 58.2261 23.28C57.4394 23.28 56.8661 23.5533 56.5061 24.1C56.1594 24.6333 55.9861 25.44 55.9861 26.52ZM78.8489 17.72V20.22H72.8489V32H69.8289V17.72H78.8489ZM87.4936 20.88C88.5069 20.88 89.3736 21.0733 90.0936 21.46C90.8269 21.8467 91.3936 22.4067 91.7936 23.14C92.1936 23.8733 92.3936 24.7733 92.3936 25.84V27.28H85.3536C85.3803 28.12 85.6269 28.78 86.0936 29.26C86.5736 29.74 87.2336 29.98 88.0736 29.98C88.7803 29.98 89.4203 29.9133 89.9936 29.78C90.5669 29.6333 91.1603 29.4133 91.7736 29.12V31.42C91.2403 31.6867 90.6736 31.88 90.0736 32C89.4869 32.1333 88.7736 32.2 87.9336 32.2C86.8403 32.2 85.8736 32 85.0336 31.6C84.1936 31.1867 83.5336 30.5667 83.0536 29.74C82.5736 28.9133 82.3336 27.8733 82.3336 26.62C82.3336 25.34 82.5469 24.28 82.9736 23.44C83.4136 22.5867 84.0203 21.9467 84.7936 21.52C85.5669 21.0933 86.4669 20.88 87.4936 20.88ZM87.5136 23C86.9403 23 86.4603 23.1867 86.0736 23.56C85.7003 23.9333 85.4803 24.5133 85.4136 25.3H89.5936C89.5936 24.86 89.5136 24.4667 89.3536 24.12C89.2069 23.7733 88.9803 23.5 88.6736 23.3C88.3669 23.1 87.9803 23 87.5136 23ZM103.21 17.72C105.05 17.72 106.39 18.12 107.23 18.92C108.083 19.7067 108.51 20.7933 108.51 22.18C108.51 22.8067 108.417 23.4067 108.23 23.98C108.043 24.54 107.73 25.0467 107.29 25.5C106.863 25.94 106.297 26.2867 105.59 26.54C104.883 26.7933 104.01 26.92 102.97 26.92H101.67V32H98.65V17.72H103.21ZM103.05 20.2H101.67V24.44H102.67C103.243 24.44 103.737 24.3667 104.15 24.22C104.563 24.0733 104.883 23.84 105.11 23.52C105.337 23.2 105.45 22.7867 105.45 22.28C105.45 21.5733 105.257 21.0533 104.87 20.72C104.483 20.3733 103.877 20.2 103.05 20.2ZM123.609 23.32H120.029V32H117.049V23.32H113.469V21.08H123.609V23.32ZM133.703 20.86C135.17 20.86 136.29 21.18 137.063 21.82C137.85 22.4467 138.243 23.4133 138.243 24.72V32H136.163L135.583 30.52H135.503C135.197 30.9067 134.877 31.2267 134.543 31.48C134.223 31.7333 133.85 31.9133 133.423 32.02C133.01 32.14 132.497 32.2 131.883 32.2C131.243 32.2 130.663 32.08 130.143 31.84C129.637 31.5867 129.237 31.2067 128.943 30.7C128.65 30.18 128.503 29.5267 128.503 28.74C128.503 27.58 128.91 26.7267 129.723 26.18C130.537 25.62 131.757 25.3133 133.383 25.26L135.283 25.2V24.72C135.283 24.1467 135.13 23.7267 134.823 23.46C134.53 23.1933 134.117 23.06 133.583 23.06C133.05 23.06 132.53 23.14 132.023 23.3C131.517 23.4467 131.01 23.6333 130.503 23.86L129.523 21.84C130.11 21.5333 130.757 21.2933 131.463 21.12C132.183 20.9467 132.93 20.86 133.703 20.86ZM134.123 26.98C133.163 27.0067 132.497 27.18 132.123 27.5C131.75 27.82 131.563 28.24 131.563 28.76C131.563 29.2133 131.697 29.54 131.963 29.74C132.23 29.9267 132.577 30.02 133.003 30.02C133.643 30.02 134.183 29.8333 134.623 29.46C135.063 29.0733 135.283 28.5333 135.283 27.84V26.94L134.123 26.98Z" fill="white"/>
+                    <path d="M1.05621 22C0.647759 18.3261 2.28157 10.7683 12.0844 9.9286L19.0132 8.93935C21.638 8.56459 23.9609 7.09418 26.0044 5.40468C28.6554 3.21293 32.5986 1.00626 37.2042 1.00626C45.9859 0.831311 64.0394 4.26029 66 19.3758" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </a>
+            <div class="footer__descr">
+                <div class="footer__descr-item descr-item">
+                    <h4 class="descr-item__adress">Адрес</h4>  
+                    <p class="descr-item__text">ул.Куйбышева д.8</p>
+                </div>    
+                <div class="footer__descr-item descr-item">
+                    <h4 class="descr-item__number">Номер телефона</h4>  
+                    <p class="descr-item__text">8 033 312-82-86</p>
+                </div>  
+                <div class="footer__descr-item descr-item">
+                    <h4 class="descr-item__email">Email</h4>  
+                    <p class="descr-item__text">autogerta@gmail.com</p>
+                </div>  
+            </div>
+            <a href="#cost" class="footer__button btn">Стоимость работ</a>
+            <div class="footer__social">
+                    <h5 class="footer__social-title">Мы в соцсетях:</h5>
+                    <ul class="footer__social-list social-list">
+                        <li class="social-list__item">
+                            <a href="https://autogerta.business.site/">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.1531 2.27454C18.582 2.27454 19.9524 2.83692 20.9628 3.83796C21.9732 4.83901 22.5408 6.19672 22.5408 7.61241V16.8324C22.5408 18.2481 21.9732 19.6058 20.9628 20.6068C19.9524 21.6079 18.582 22.1702 17.1531 22.1702H7.84694C6.41802 22.1702 5.04762 21.6079 4.03722 20.6068C3.02682 19.6058 2.45918 18.2481 2.45918 16.8324V7.61241C2.45918 6.19672 3.02682 4.83901 4.03722 3.83796C5.04762 2.83692 6.41802 2.27454 7.84694 2.27454H17.1531ZM17.1531 0.333496H7.84694C5.9002 0.339256 4.03485 1.10799 2.65829 2.4718C1.28173 3.83562 0.505814 5.68369 0.5 7.61241V16.8324C0.505814 18.7611 1.28173 20.6092 2.65829 21.973C4.03485 23.3368 5.9002 24.1055 7.84694 24.1113H17.1531C19.0998 24.1055 20.9651 23.3368 22.3417 21.973C23.7183 20.6092 24.4942 18.7611 24.5 16.8324V7.61241C24.4942 5.68369 23.7183 3.83562 22.3417 2.4718C20.9651 1.10799 19.0998 0.339256 17.1531 0.333496V0.333496Z" fill="white"/>
+                                    <path d="M18.9113 4.44775C18.6338 4.44775 18.3625 4.52929 18.1317 4.68206C17.9009 4.83482 17.7211 5.05195 17.6149 5.30599C17.5087 5.56003 17.4809 5.83957 17.535 6.10925C17.5892 6.37894 17.7228 6.62666 17.9191 6.8211C18.1153 7.01553 18.3654 7.14794 18.6376 7.20158C18.9098 7.25523 19.1919 7.2277 19.4483 7.12247C19.7047 7.01724 19.9239 6.83905 20.0781 6.61042C20.2323 6.38179 20.3146 6.113 20.3146 5.83803C20.3146 5.65545 20.2783 5.47467 20.2078 5.30599C20.1372 5.13732 20.0339 4.98405 19.9036 4.85496C19.7733 4.72586 19.6186 4.62345 19.4483 4.55358C19.2781 4.48371 19.0956 4.44775 18.9113 4.44775V4.44775Z" fill="white"/>
+                                    <path d="M12.5663 7.9684C13.4228 7.96792 14.2603 8.21916 14.9727 8.69033C15.6851 9.16151 16.2405 9.83144 16.5685 10.6154C16.8965 11.3993 16.9824 12.262 16.8155 13.0944C16.6485 13.9267 16.236 14.6913 15.6304 15.2914C15.0247 15.8915 14.253 16.3001 13.4128 16.4655C12.5727 16.6309 11.7019 16.5458 10.9107 16.2208C10.1194 15.8958 9.4432 15.3456 8.96762 14.6398C8.49204 13.934 8.23846 13.1043 8.23894 12.2557C8.24088 11.1192 8.69742 10.0298 9.50854 9.22624C10.3197 8.42264 11.4192 7.97032 12.5663 7.9684M12.5663 6.02736C11.3229 6.02975 10.1081 6.39728 9.07541 7.08349C8.04275 7.76969 7.23858 8.74378 6.76453 9.88265C6.29048 11.0215 6.16783 12.2741 6.41207 13.482C6.65631 14.6899 7.25649 15.799 8.13675 16.669C9.01701 17.5391 10.1378 18.1311 11.3576 18.3703C12.5774 18.6095 13.8413 18.485 14.9897 18.0127C16.1381 17.5404 17.1195 16.7414 17.8097 15.7167C18.4999 14.692 18.868 13.4876 18.8675 12.2557C18.8672 11.4366 18.7039 10.6257 18.3869 9.86921C18.07 9.11275 17.6056 8.42563 17.0203 7.84715C16.4351 7.26867 15.7404 6.81018 14.9762 6.49792C14.2119 6.18567 13.393 6.02576 12.5663 6.02736V6.02736Z" fill="white"/>
+                                </svg>   
+                            </a>
+                            
+                        </li>
+                        <li class="social-list__item">
+                            <a href="https://autogerta.business.site/">
+                                <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.066 6.60272V9.89396H0.5V13.9568H4.066V23.1112H8.28623V13.9568H11.8824L12.3128 9.89614H8.28623V6.60272C8.28623 6.02076 8.74032 5.73087 8.93185 5.55214C9.26973 5.26007 10.901 5.2143 10.901 5.2143H12.5V1.5329C11.6675 1.40693 10.8279 1.33414 9.98637 1.31494C3.94333 1.31494 4.066 6.60272 4.066 6.60272Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round"/>
+                                </svg>
+                            </a>
+                            
+                        </li>
+                        <li class="social-list__item">
+                            <a href="https://autogerta.business.site/">
+                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.3334 8.20226C13.3334 8.43892 13.1684 8.63255 12.9668 8.63255C12.7651 8.63255 12.6001 8.43892 12.6001 8.20226C12.6001 7.9656 12.7651 7.77197 12.9668 7.77197C13.1684 7.77197 13.3334 7.9656 13.3334 8.20226Z" fill="white"/>
+                                    <path d="M17.8705 22.1112C17.5757 22.1112 17.2523 21.9976 16.9025 21.7713L11.9745 17.5037C11.8117 17.3625 11.7765 17.0923 11.8975 16.9021C12.0178 16.7111 12.2481 16.6698 12.4101 16.8118L17.2971 21.0484C17.4958 21.1732 17.8317 21.3316 18.0707 21.2016C18.3142 21.0708 18.4345 20.6534 18.4932 20.3264L21.7015 2.58378C21.8262 1.99773 21.766 1.52613 21.5438 1.30926C21.3744 1.14403 21.1222 1.13198 20.8494 1.27656L1.99087 9.81181C1.41227 10.0846 1.2304 10.3652 1.23333 10.4581C1.23553 10.5192 1.3602 10.6879 1.732 10.8213L6.56763 12.5923C6.68349 12.6345 6.77369 12.7421 6.80963 12.8781L8.4721 19.2989C8.51684 19.4426 8.5513 19.5854 8.58137 19.7094C8.60484 19.8075 8.63417 19.9297 8.65397 19.9658C8.65104 19.9615 8.7097 19.9822 8.8659 19.983C9.19371 19.983 9.31837 19.8393 9.56771 19.5544L10.785 18.1655C10.9302 17.9985 11.162 18.0037 11.3035 18.1741C11.4443 18.3445 11.4414 18.6173 11.2962 18.7825L10.0994 20.1465C9.80457 20.4847 9.49217 20.8427 8.8659 20.8427C8.14723 20.8427 8.00203 20.4692 7.87517 19.9426C7.8495 19.8359 7.82016 19.7128 7.77616 19.5708L6.16429 13.3462L1.51567 11.6431C0.657662 11.335 0.510995 10.7911 0.500728 10.4942C0.486061 10.0872 0.686262 9.49855 1.7232 9.01147L20.5663 0.484822C21.0774 0.211158 21.626 0.269677 22.0139 0.649194C22.4634 1.08895 22.6101 1.8652 22.4165 2.77827L19.2111 20.5045C19.0762 21.2601 18.796 21.7584 18.3773 21.9839C18.2196 22.0691 18.051 22.1112 17.8705 22.1112Z" fill="white"/>
+                                    <path d="M17.8705 22.1112C17.5757 22.1112 17.2523 21.9976 16.9025 21.7713L8.9803 14.9073C8.89157 14.8307 8.8373 14.7111 8.83144 14.582C8.8263 14.4529 8.8703 14.3281 8.95244 14.2412L18.3362 4.33162C18.4866 4.17241 18.7183 4.18618 18.854 4.36346C18.9896 4.53988 18.9772 4.81183 18.8268 4.97103L9.77744 14.5287L17.2971 21.0484C17.4958 21.1732 17.8317 21.3316 18.0707 21.2016C18.3142 21.0708 18.4345 20.6534 18.4932 20.3264L21.7015 2.58378C21.8262 1.99773 21.766 1.52613 21.5438 1.30926C21.3744 1.14403 21.1222 1.13198 20.8494 1.27656L1.99087 9.81181C1.41227 10.0846 1.2304 10.3652 1.23333 10.4581C1.23553 10.5192 1.3602 10.6879 1.732 10.8213L6.40702 12.5338L11.5397 8.7335C11.7113 8.60785 11.9371 8.66723 12.0449 8.86775C12.1527 9.06826 12.1021 9.33418 11.9305 9.46069L6.65489 13.3669C6.56396 13.434 6.45176 13.4512 6.34982 13.4142L1.51567 11.6431C0.657662 11.335 0.510995 10.7911 0.500728 10.4942C0.486061 10.0872 0.686262 9.49855 1.7232 9.01147L20.5663 0.484822C21.0774 0.211158 21.626 0.269677 22.0139 0.649194C22.4634 1.08895 22.6101 1.8652 22.4165 2.77827L19.2111 20.5045C19.0762 21.2601 18.796 21.7584 18.3773 21.9839C18.2196 22.0691 18.051 22.1112 17.8705 22.1112Z" fill="white"/>
+                                </svg>  
+                            </a>
+                            
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        </div>
+        <div class="copyright">
+            Станция кузовного ремонта "АвтоГерТа"
+        </div>
+    </footer>
+    <div class="go-top"><!-- Кнопка вверх -->
+        <svg width="24" height="35" viewBox="0 0 24 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 35V3M12 3L22 13.1517M12 3L2 13.1517" stroke="#1A2130" stroke-width="5" stroke-linejoin="round"/>
+        </svg>
+    </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="js/components/addmore.js"></script>
+<script src="js/components/renderNews.js"></script>
+<script src="js/components/calc.js"></script>
+<script src="js/components/calcColor.js"></script>
+<script src="js/components/swiper.js"></script> 
+<script src="js/components/inputmask.min.js"></script>
+<script src="js/components/just-validate.min.js"></script>
+<script src="js/components/validation.js"></script>
+<script src="js/components/popup.js"></script>
+<script src="js/components/header.js"></script>
+<script src="js/components/rating.js"></script>
+<script src="js/main.min.js"></script> 
+</body> 
+</html>

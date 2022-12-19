@@ -1,0 +1,193 @@
+.hero__popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    &.open{
+        opacity: 1;
+        visibility: visible;    
+        pointer-events: all;   
+    }
+    &-body{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        padding: 20px;
+        @media(max-width: 600px){
+            padding: 10px;
+        }
+        @media(max-width: 370px){
+            padding: 5px;
+        }
+    }
+    &-content{
+        position: relative;
+        width: 500px;
+        min-height: 800px;
+        background-color: $black;
+        border-radius: 5px;
+        padding: 35px 15px;
+        margin: auto;
+        @media(max-width: 600px){
+            width: 450px;
+            min-height: 600px;
+            padding: 20px 10px;
+        }
+        @media(max-width: 440px){
+            width: 300px;
+            height: 400px;
+            padding: 15px 5px;
+        }
+        @media(max-width: 370px){
+            width: 320px;
+            height: 200px;
+            padding: 10px 5px;
+        }
+    }
+    &-title{
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 167.5%;
+        color: $yellow;
+        margin-bottom: 20px;
+        @media(max-width: 600px){
+            font-size: 16px;
+        }
+    }
+    &-close{
+        position: absolute;
+        display: block;
+        top: 0%;
+        right: 0%;
+        background-color: transparent;
+        color: $yellow;
+        font-size: 50px;
+        cursor: pointer;
+        transition: color 0.3s ease-out;
+        @media(any-hover:hover){
+            &:hover{
+                color: lighten($color: $yellow, $amount: 10%);
+            }
+         
+        }
+    }
+}
+.form-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__label{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        @media(max-width: 440px){
+            margin-bottom: 5px;
+        }
+    }
+    &__text{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 180%;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: $yellow;
+        @media(max-width: 440px){
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+    }
+    &__input{
+        outline: none;
+        border: 2px solid $yellow;
+        width: 350px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: transparent;
+        padding: 0px 15px;
+        color: $yellow;
+        &::placeholder{
+            color: rgba($color: $yellow, $alpha: 0.5);
+        }
+        &:focus{
+            box-shadow: 0px 4px 13px 0px rgba(206, 146, 70, 0.2);
+        }
+        @media(max-width: 600px){
+            width: 300px;
+            height: 35px;
+        }
+        @media(max-width: 440px){
+            width: 220px;
+            height: 30px;
+        }
+    }
+    &__info{
+        width: 350px;
+        height: 100px;
+        outline: none;
+        border: 2px solid $yellow;
+        border-radius: 5px;
+        padding: 15px;
+        resize: none;
+        color: $yellow;
+        background-color: transparent;
+        @media(max-width: 600px){
+            width: 300px;
+            height: 80px;
+        }
+        @media(max-width: 440px){
+            width: 220px;
+            height: 70px;
+        }
+    }
+    &__button{
+        margin-top: 10px;
+        padding: 20px 53px;
+    }
+}
+.file-hero{
+    position: relative;
+    width: 350px;
+    display: flex;
+    align-items: flex-start;
+    @media(max-width: 600px){
+        width: 300px;
+    }
+    @media(max-width: 440px){
+        width: 220px;
+    }
+    &__input{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        font-size: 0;
+    }
+    
+    &__button{
+        display: inline-flex;
+        background-color: transparent;
+        border-radius: 5px;
+        border: 2px solid $yellow;
+        padding: 15px 17px;
+        color: $yellow;
+        font-weight: bold;
+        font-size: 14px;
+        margin-bottom: 15px;
+        transition: all 0.3s ease-out;
+        @media(max-width: 440px){
+            padding: 12px 15px;
+            margin-bottom: 10px;
+        }
+    }
+}

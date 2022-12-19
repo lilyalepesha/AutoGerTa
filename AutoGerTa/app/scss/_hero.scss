@@ -1,0 +1,114 @@
+.hero{
+    padding: 176px 0 108px 0;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: url('../images/hero/bg.jpg');
+    @media(max-width:$md2){
+        padding: 150px 0 60px 0;
+    }
+    @media(max-width:$md3){
+        padding: 130px 0 40px 0;
+    }
+    @media(max-width:$md4){
+        padding: 95px 0 30px 0;
+    }
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 10px;
+        @media(max-width:$md3){
+            flex-direction: column;
+        }
+    }
+    &__content{
+        flex: 0 1 calc(491px/$maxWidth)*100%;
+        @media(max-width:$md3){
+            text-align: center;
+            max-width: 500px;
+        }
+    }
+    &__content-title{
+        font-family: 'Gilroy';
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 152%;
+        color: $white;
+        margin-bottom: 40px;
+        @media(max-width:1065px){
+            font-size: 40px;
+        }
+        @media(max-width:971px){
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        @media(max-width:$md4){
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+ 
+        span{
+            color: $yellow;
+        }
+    }
+    &__content-btns{
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        margin-top: 65px;
+        @media(max-width:1060px){
+            margin-top: 45px;
+        }
+        @media(max-width:$md3){
+            justify-content: center;
+        }
+        @media(max-width:350px){
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
+    &__content-descr{
+        line-height: 249.5%;
+        color: $white;
+        @media(max-width:900px){
+            font-size: 14px;
+        }
+        @media(max-width:$md4){
+            font-size: 12px;
+        }
+    }
+    &__img{
+        flex: 0 1 calc(500px/$maxWidth)*100%;
+        @media(max-width:$md3){
+            max-width: 300px;    
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+.call.btns-item{
+    @media(max-width:1060px){
+        padding: 15px 25px;
+    }
+    @media(max-width:971px){
+        padding: 12px 18px;
+    }
+    @media(max-width:350px){
+        width: 100%;
+    }
+}
+.btn.btns-item{
+    @media(max-width:1060px){
+        padding: 23px 25px;
+    }
+    @media(max-width:971px){
+        padding: 19px 19px;
+    }
+    @media(max-width:350px){
+        width: 100%;
+    }
+}

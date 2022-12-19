@@ -1,0 +1,475 @@
+.cost{
+    padding: 47px 0 80px 0;
+    background-color: $black;
+    @media(max-width: $md3){
+        padding: 35px 0 50px 0;
+    }
+    &__container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title{
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            background-image: url('../images/cost/decor.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 80px;
+            height: 80px;
+            right: 5%;
+            opacity: 0.7;
+            @media(max-width: $md2){
+                display: none;
+            }
+        }
+    }
+    &__content{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        column-gap: 10px;
+        margin-top: 85px;
+        width: 100%;
+        @media(max-width: $md2){
+            align-items: center;
+            row-gap: 50px;
+            flex-direction: column;
+            margin-top: 65px;
+        }
+        @media(max-width: $md3){
+            align-items: center;
+            row-gap: 50px;
+            flex-direction: column;
+            margin-top: 45px;
+        }
+    }
+    &__cards-items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 1 25%;
+        column-gap: 30px;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        @media(max-width: 880px){
+            column-gap: 15px;
+        }
+    }
+    &__cards-title{
+        text-align: center;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 153%;
+        font-family: 'Gilroy', sans-serif;
+        color: $yellow;
+        margin: 40px 0;
+        max-width: 310px;
+        @media(max-width:$md3){
+            font-size: 28px;
+            margin: 25px 0;
+        }
+        @media(max-width:$md4){
+            font-size: 24px;
+            margin: 20px 0;
+        }
+    }
+}
+.cost__table{
+    flex: 0 1 70%;
+    border-collapse: separate;
+    @media(max-width: $md2){
+        width: 100%;
+    }
+    &-name{
+        display: flex;
+        padding: 20px 5px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        @media(max-width: $md4){
+            padding: 15px 7px;
+        }
+    }
+    &-kind{
+        color: $white;
+        font-size: 12px;
+        margin-right: 15px;
+        @media(max-width: 540px){
+            font-size: 10px;
+        }
+    }
+    &-select{
+        flex:  0 1 230px;
+        border: 1px solid $white;
+        background-color: transparent;
+        color: $white;
+        padding: 7px 5px;
+        font-size: 12px;
+        border-radius: 5px;
+        @media(max-width: 540px){
+            max-width: 120px;
+        }
+        @media(max-width: 540px){
+            font-size: 10px;
+        }
+    }
+    &-price{
+        color: $white;
+        padding: 0px 10px;
+
+    }
+    &-item{
+        color: $white;
+
+    }
+    &-add{
+        width: 40px;
+        height: 40px;
+        background-color: $yellow;
+        font-size: 28px;
+        font-weight: bold;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s ease-out;
+        margin: 0px 0px 20px 10px;
+        @media(max-width: 540px){
+            height: 30px;
+            width: 30px;
+            font-size: 24px;
+            margin: 0px 0px 20px 5px;
+        }
+        @media(any-hover:hover){
+            &:hover{
+                background-color: darken($color: $yellow, $amount: 10);
+            }
+        }
+    }
+}
+td{
+    text-align: center;
+    font-size: 14px;
+    @media(max-width: 540px){
+        font-size: 10px;
+    }
+    &:not(:last-child){
+        border: 1px solid $white;
+    }
+}
+th{
+    background-color: $yellow;
+    border: 1px solid $yellow;
+    text-align: center;
+    color: $white;
+    padding: 17px 0;
+    font-weight: bold;
+    @media(max-width: 580px){
+        font-size: 14px;
+        padding: 14px;
+    }
+    @media(max-width: 540px){
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+tr{
+    width: 100%;
+    height: 100%;
+}
+option{
+    background-color: $lightblack;
+    color: $white;
+}
+.calc{
+    background-color: $lightblack;
+    flex: 0 1 30%;
+    height: 340px;
+    overflow: auto;
+    padding: 20px 35px;
+    border-radius: 5px;
+    @media(max-width: $md2){
+        min-height: 250px;
+        width: 60%;
+    }
+    @media(max-width: 550px){
+        width: 80%;
+        min-height: 200px;
+    }
+    @media(max-width: 550px){
+        min-height: 150;
+    }
+    @media(max-width: 470px){
+        width: 90%;
+        min-height: 150px;
+    }
+    &-content{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    &-content__items{
+        flex-grow: 1;
+        margin-bottom: 10px;
+    }
+    &-content__total{
+        margin-top: auto;
+        border-top: 1px solid $yellow;
+        color: $yellow;
+        font-size: 14px;
+        font-weight: bold;
+        width: 100%;
+        padding-top: 5px;
+        @media(max-width: 470px){
+            font-size: 12px;
+        }
+    }
+  
+}
+.content-calc{
+    margin-top: 10px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+  
+    &__count{
+        color: $white;
+    }
+    &__title{
+        color: $white;
+    }
+    &__text{
+        color: $white;
+    }
+    
+}
+.calc__text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    &-title{
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Gilroy', sans-serif;
+        text-align: center;
+        margin-bottom: 5px;
+        color: $white;
+        @media(max-width: 550px){
+            font-size: 16px;
+        }
+        @media(max-width: 470px){
+            font-size: 14px;
+        }
+    }
+    &-descr{
+        font-size: 14px;
+        color: $white;
+        @media(max-width: 550px){
+            font-size: 12px;
+        }
+        @media(max-width: 470px){
+            font-size: 10px;
+        }
+        &.none{
+            display: none;
+        }
+    }
+}
+
+.item-cards{
+    max-width: 255px;
+    padding: 10px 17px 20px 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: $lightblack;
+    border-radius: 5px;
+    @media(max-width: 880px){
+        max-width: 200px;
+    }
+    &__img{
+        max-width: 150px;
+        max-height: 150px;
+        @media(max-width: 880px){
+            max-width: 120px;
+            max-height: 120px;
+        }
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 153%;
+        color: $white;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    &__select{
+        border: 1px solid $yellow;
+        padding: 5px 15px;
+        border-radius: 5px;
+        background-color: transparent;
+        width: 150px;
+        outline: none;
+        color: $yellow;
+        margin-bottom: 14px;
+    }
+    &__button{
+        padding: 15px 39px;
+        font-size: 12px;
+        @media(max-width: 880px){
+            padding: 13px 32px;
+        }
+    }
+    
+}
+.counter{
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+    color: $white;
+    margin-bottom: 10px;
+    user-select: none;
+    &__minus, 
+    &__plus{
+        cursor: pointer;
+        width: 25px;
+        background-color: $yellow;
+        color: $black;
+        transition: all 0.3s ease-out;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 5px;
+        @media(any-hover:hover){
+            &:hover{
+                background-color: darken($color: $yellow, $amount: 15);
+            }
+        }
+    }
+    &__count{
+        font-size: 12px;
+        font-weight: bold;
+        background-color: $black;
+        width: 35px;
+    }
+}
+.content-cards__price{
+    font-size: 12px;
+    color: $white;
+    span{
+        color: $yellow;
+        font-weight: bold;
+    }
+}
+.card__item{
+    margin-top: 25px;
+    &-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 5px;
+        margin-bottom: 15px;
+    }
+    &-img{
+        max-width: 50px;
+        max-height: 50px;
+        img{
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }
+    &-title{
+        font-size: 11px;
+        color: $white;
+        line-height: 150%;
+    }
+    &-price{
+        font-size: 11px;
+        color: $white;
+        line-height: 150%;
+        color: $yellow;
+        font-weight: bold;
+    }
+    &-color{
+        font-size: 11px;
+        color: $white;
+        margin-top: 3px;
+        align-items: center;
+    }
+    &-counter{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0 5px 0;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &-plus,
+    &-minus{
+        width: 50px;
+        background-color: $yellow;
+        color: $black;
+        font-weight: bold;
+        font-size: 22px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        transition: background-color 0.3s ease-out;
+        @media(any-hover:hover){
+            &:hover{
+                background-color: darken($color: $yellow, $amount: 15%);
+            }
+        }
+    }
+    &-count{
+        background-color: $black;
+        font-weight: bold;
+        color: $white;
+        width: 80px;
+        text-align: center;
+    }
+}
+
+.content-calc__button, .card__item-close{
+    font-size: 25px;
+    background-color: transparent;
+    color: $yellow;
+    font-weight: bold;
+}
+.content-cards__color{
+    color: $white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 5px;
+    span{
+        display: block;
+        background-color: $white;
+        width: 15px;
+        height: 15px;
+        border-radius: 5px;
+    }
+}
